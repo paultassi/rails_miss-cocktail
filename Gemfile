@@ -29,6 +29,9 @@ gem 'figaro'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+ruby '2.2.2'
+gem 'rails_12factor', group: :production
+gem 'puma',           group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
