@@ -1,5 +1,5 @@
 <h2><%= @cocktail.name %></h2>
-
+<%= image_tag @cocktail.picture.url(:medium) %>
 <ul>
 <% @cocktail.doses.each do |dose| %>
   <li>
@@ -9,5 +9,4 @@
 </ul>
 <p>
   <%= link_to "Ajouter une dose", new_cocktail_dose_path(@cocktail) %>
-  <%= image_tag @cocktail.picture.url(:medium) %>
 </p>
